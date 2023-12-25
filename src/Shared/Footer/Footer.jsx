@@ -3,7 +3,7 @@ const Footer = () => {
     return (
         <div>
             
-            <footer className="footer p-11 bg-base-200 text-base-content">
+            <footer className="footer p-11 mt-3 bg-base-200 text-base-content">
   <aside>
     <img src="https://i.ibb.co/GVdYgPL/406969428-815832850312796-3587584866340816699-n.png" alt="" />
     <p>The Daily Prothom Alo <br /> is a daily newspaper in Bangladesh, <br /> published from  Dhaka in <br /> the Bengali language. It is the largest circulated newspaper in Bangladesh</p>

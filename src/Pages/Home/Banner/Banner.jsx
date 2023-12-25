@@ -10,7 +10,15 @@ import img4 from '../../../../public/banner/Prothom-Alo-4.jpg'
 const Banner = () => {
     return (
         
-        <Carousel className=' w-full h-full' >
+        
+     <div>
+
+        <section className=' mt-4 text-center' >
+            <h1 className=' text-5xl text-orange-500 ' > ----- Audience response ----- </h1>
+            <p className=' text-4xl text-orange-700 ' > ----- Some feedback from our audience ----- </p>
+        </section>
+
+ <Carousel className='  mt-4 ' >
         <div>
             <img src={img1} />
          
@@ -29,7 +37,10 @@ const Banner = () => {
         </div>
         
       
-    </Carousel>
+    </Carousel> 
+
+
+     </div>
 
 
     );
