@@ -1,5 +1,5 @@
-
-
+import { AiFillDingtalkCircle, AiFillPhone } from "react-icons/ai";
+import { FaLocationDot } from "react-icons/fa6";
 const Contacts = () => {
     return (
         <div>
@@ -32,10 +32,49 @@ const Contacts = () => {
 
         </div>
 
-     <div className=" bg-green-600 w-full h-80 mt-14" >
+     <div className=" shadow-lg lg:w-full lg:h-80 mt-14" >
 
-        <div className=" bg-slate-200 w-10/12 h-52 mx-auto " >
-             hhhhhhhh
+        <div className=" bg-slate-200  lg:w-10/12  lg:h-52  lg:mx-auto " >
+             
+    <section className=" grid grid-cols-1 lg:grid-cols-3 p-3" >
+
+   <div> 
+
+   <AiFillDingtalkCircle className=" text-7xl " ></AiFillDingtalkCircle>
+
+  <h1 className=" text-4xl font-bold" > Lets Talk </h1>
+   
+   <p className=" mt-4" > Please contact below address </p>
+
+   </div>
+
+   <div>
+
+ <AiFillPhone className=" text-7xl" ></AiFillPhone>
+
+ <h1 className=" text-4xl font-bold" > Phone (Landline) </h1>
+
+<p> +0954467984 </p>
+<p> +095408954 </p>
+
+ <h1></h1>
+
+   </div>
+
+   <div>
+
+ <FaLocationDot className=" text-7xl" ></FaLocationDot>
+ <h1 className=" text-4xl font-bold" > Our Office Location </h1>
+  
+  <p> The News Company Prothom Alo  </p>
+
+  <small> Dhaka Gulshan 1 No. 12 Road No. 16 House No. 3 Floor Lift </small>
+
+   </div>
+
+
+    </section>
+
         </div>
 
      </div>

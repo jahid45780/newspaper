@@ -30,8 +30,8 @@ const Plans = () => {
 
 
             {/* plan 2 */}
-            <div className="border-4  space-y-9 border-red-600  p-5" >
-            <img className="w-60 h-60 mb-5 mx-auto" src="https://i.ibb.co/grND9Kk/385522126-344212231677893-8445201731388935557-n.png" alt="" />
+            <div className="border-4  space-y-8 border-red-600  p-5" >
+            <img className="w-60 h-60 mb-5 mx-auto" src="https://i.ibb.co/5FFj4JL/Gold-Modern-Premium-Warranty-Logo-1.jpg" alt="" />
           <section className=" flex gap-5 items-center" >
           <h1 className=" text-4xl font-bold p-3 " > Premium Duo</h1>
           <p className=" font-bold text" > $14 <br /> <span> per month</span> </p>

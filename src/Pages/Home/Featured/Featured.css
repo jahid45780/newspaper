@@ -1,12 +1,12 @@
-.Featured-item{
+/* .Featured-item{
     background-image: url("../../../../public/Featured/Rotating_earth_\(large\).gif");
     background-size: auto;
     padding: 20px;
 
 
-}
+} */
 #root{
-    /* background-image: url("../../../../public/Featured/pattern-moving.gif");
-    background-size: cover;
-    backface-visibility: initial; */
+    background-image: url("../../../../public/Featured/25101-e1656072622949.jpg");
+    
 }
+

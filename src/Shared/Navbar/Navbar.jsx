@@ -19,7 +19,7 @@ const Navbar = () => {
     return (
         <div>
 
-<div className="navbar fixed z-10 bg-opacity-20 max-w-7xl bg-black text-white rounded-3xl  ">
+<div className="navbar fixed z-10 bg-opacity-20  bg-black text-white rounded-3xl  ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -44,7 +44,7 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+      <Link to='/login' > Login </Link>
   </div>
 </div>
             
