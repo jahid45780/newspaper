@@ -8,7 +8,7 @@ const Trending = () => {
 
     const [trending, setTrending] = useState([])
     useEffect(()=>{
-        fetch('tr.json')
+        fetch('http://localhost:5000/trending')
         .then(res => res.json())
         .then(data => setTrending(data) )
     },[])
