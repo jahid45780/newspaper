@@ -12,7 +12,6 @@ const Banner = () => {
         
         
      <div>
-
         <section className=' mt-4 text-center' >
             <h1 className=' text-5xl text-orange-500 ' > ----- Audience response ----- </h1>
             <p className=' text-4xl text-orange-700 ' > ----- Some feedback from our audience ----- </p>

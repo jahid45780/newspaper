@@ -1,8 +1,11 @@
+
 import './Featured.css'
 const Featured = () => {
     return (
         
        <div className=' ' >
+
+
 
 <section className=' mt-4 text-center' >
             <h1 className=' text-5xl text-orange-500 ' > ----- Featured Item ----- </h1>

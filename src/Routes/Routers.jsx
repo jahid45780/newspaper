@@ -9,6 +9,8 @@ import SignUp from "../Shared/SignUp/SignUp";
 import Dashboard from "../Pages/Dashboard/Dashboard";
 import PrivateRoute from "./PrivateRoute";
 import AllArticles from "../Pages/AllArticles/AllArticles";
+import NewsDetail from "../Pages/NewsDetail/NewsDetail";
+import AddArticles from "../Pages/AddArticles/AddArticles";
 
 
 
@@ -38,6 +40,15 @@ import AllArticles from "../Pages/AllArticles/AllArticles";
         {
           path:'/AllArticles',
           element:<AllArticles></AllArticles>
+        },
+        {
+          path:'/detail/:id',
+          element:<NewsDetail></NewsDetail>,
+          loader: ({params}) => fetch(`http://localhost:5000/allNews/${params.id}`)
+        },
+        {
+          path:'/addArticles',
+          element:<AddArticles></AddArticles>
         }
       ]
     },

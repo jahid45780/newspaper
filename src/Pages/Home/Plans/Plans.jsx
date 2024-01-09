@@ -10,7 +10,9 @@ const Plans = () => {
 
           <div className=" grid grid-cols-1 lg:grid-cols-3 gap-5 mt-3  " >
 
-            <div className=" space-y-3 border-4  border-red-400 p-5 " >
+            <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className=" space-y-3 border-4  border-red-400 p-5 " >
             <img className=" w-60 h-60 mx-auto " src="https://i.ibb.co/nD6DkxR/14979076-SL-051421-43010-01.jpg" alt="" />
 
           <h1 className=" text-4xl font-bold bg-green-500 p-3 " > Free For 1 Month </h1>
@@ -30,7 +32,9 @@ const Plans = () => {
 
 
             {/* plan 2 */}
-            <div className="border-4  space-y-8 border-red-600  p-5" >
+            <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className="border-4  space-y-8 border-red-600  p-5" >
             <img className="w-60 h-60 mb-5 mx-auto" src="https://i.ibb.co/5FFj4JL/Gold-Modern-Premium-Warranty-Logo-1.jpg" alt="" />
           <section className=" flex gap-5 items-center" >
           <h1 className=" text-4xl font-bold p-3 " > Premium Duo</h1>
@@ -49,7 +53,9 @@ const Plans = () => {
             </div>
 
             {/* plan 3 */}
-            <div className=" border-4  border-red-900 space-y-4 p-5" >
+            <div  data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500" className=" border-4  border-red-900 space-y-4 p-5" >
           <img className=" w-60 h-60 mb-5 mx-auto" src="https://i.ibb.co/x105TP5/Gold-Modern-Premium-Warranty-Logo.jpg" alt="" />
             <section className=" flex gap-5 items-center" >
           <h1 className=" text-3xl font-bold p-3 " > Premium Family</h1>
