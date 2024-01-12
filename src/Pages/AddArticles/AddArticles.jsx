@@ -1,9 +1,9 @@
-
+import { useForm } from "react-hook-form";
 import { useState } from 'react';
 import Select from 'react-select';
 
 const AddArticles = () => {
-     const [value, setValue]= useState(null)
+    const [value, setValue] = useState(null)
 
     const options = [
         { value: 'chocolate', label: 'Chocolate' },
@@ -15,11 +15,24 @@ const AddArticles = () => {
         { value: 'Entertainment', label: 'Entertainment' },
         { value: 'Science', label: 'Science' },
         { value: 'Environment', label: 'Environment' },
-      ];
+
+    ];
+
+
+
+    const { register, handleSubmit } = useForm();
+    const onSubmit = data => { 
+        data.tag=value
+        console.log(data);
+       
+    } ;
+
+
+
 
     return (
         <div className=" max-w-6xl mx-auto" >
-     <form>
+            <form onSubmit={handleSubmit(onSubmit)} >
                 <h1 className=" text-5xl text-center font-bold rounded-box shadow-lg mt-3 p-3" > Add Article </h1>
                 <div className="form-control w-full my-3">
                     <label className="label">
@@ -27,9 +40,10 @@ const AddArticles = () => {
                     </label>
                     <input type="text"
                         placeholder="Title "
-
+                        {...register("title")}
                         required
-                        className="input input-bordered border-2 border-red-100 w-full" />
+                        className="input input-bordered border-2
+                        border-red-100 w-full" />
 
                 </div>
 
@@ -42,7 +56,7 @@ const AddArticles = () => {
                         </label>
                         <input type="text"
                             placeholder="Publisher"
-
+                            {...register("publisher")}
                             required
                             className="input input-bordered border-2 border-red-100 w-full" />
 
@@ -50,18 +64,18 @@ const AddArticles = () => {
 
 
                     {/* ,tags*/}
-
                     <div className="form-control w-full ">
-                    <label className="label">
+                        <label className="label">
                             <span className="label-text"> Select Tag </span>
                         </label>
-                    <Select options={options} defaultValue={value} placeholder='select your tag..' 
-                      onChange={setValue} isMulti isSearchable 
-                      noOptionsMessage={()=>"no tag found"}
-                      className=' border-2 border-red-100 bordered '
-                    >
+                        <Select options={options} defaultValue={value} placeholder='select your tag..' onChange={setValue} isMulti isSearchable
+                            noOptionsMessage={() => "no tag found"}
+                            className=' border-2 border-red-100 bordered '
+                        >
 
-                      </Select>
+                        </Select>
+
+
 
 
                     </div>
@@ -72,11 +86,11 @@ const AddArticles = () => {
                     <label className="label">
                         <span className="label-text"> Article Description</span>
                     </label>
-                    <textarea className="textarea border-2 border-red-100 textarea-bordered h-28" placeholder="Articles Details"></textarea>
+                    <textarea {...register("details")} className="textarea border-2 border-red-100 textarea-bordered h-28" placeholder="Articles Details"></textarea>
                 </div>
 
                 <div className=" mt-4 mb-3" >
-                    <input type="file" className="file-input file-input-bordered border-2 border-red-100 w-full max-w-xs" />
+                    <input type="file" {...register("file")} className="file-input file-input-bordered border-2 border-red-100 w-full max-w-xs" />
                 </div>
 
 
@@ -84,8 +98,8 @@ const AddArticles = () => {
                     Add Article
                 </button>
             </form>
-         
-   
+
+
 
         </div>
     );

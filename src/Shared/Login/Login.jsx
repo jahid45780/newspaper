@@ -55,6 +55,7 @@ const Login = () => {
       const loggedInUser = result.user
       console.log(loggedInUser);
       Swal.fire('Login Successfully')
+      navigate(location?.state? location?. state : '/')
     })
     .catch(error=>{
       console.log(error);
