@@ -11,6 +11,9 @@ import PrivateRoute from "./PrivateRoute";
 import AllArticles from "../Pages/AllArticles/AllArticles";
 import NewsDetail from "../Pages/NewsDetail/NewsDetail";
 import AddArticles from "../Pages/AddArticles/AddArticles";
+import UserHome from "../Pages/Dashboard/UserHome/UserHome";
+import Premium from "../Pages/Dashboard/Premium/Premium";
+import AllUser from "../Pages/Dashboard/AllUser/AllUser";
 
 
 
@@ -49,7 +52,27 @@ import AddArticles from "../Pages/AddArticles/AddArticles";
         {
           path:'/addArticles',
           element:<AddArticles></AddArticles>
+        },
+        {
+          path:'/premium',
+          element:<Premium></Premium>
         }
       ]
     },
+          //  dashboard contant
+    {
+      path:'/dashboard',
+      element:<PrivateRoute> <Premium></Premium> </PrivateRoute>,
+      children:[
+        {
+          path:'/dashboard/userHome',
+          element:<UserHome></UserHome>
+        },
+        {
+          path:'/dashboard/allUsers',
+          element:<AllUser></AllUser>
+        }
+      ]
+    }
+
   ]);
