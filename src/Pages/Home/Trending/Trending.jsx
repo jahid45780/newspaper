@@ -8,7 +8,7 @@ const Trending = () => {
 
     const [trending, setTrending] = useState([])
     useEffect(()=>{
-        fetch('http://localhost:5000/trending')
+        fetch('https://newspaper-server-site-mu.vercel.app/trending')
         .then(res => res.json())
         .then(data => setTrending(data) )
     },[])

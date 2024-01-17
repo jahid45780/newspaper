@@ -48,8 +48,8 @@ import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
         },
         {
           path:'/detail/:id',
-          element:<NewsDetail></NewsDetail>,
-          loader: ({params}) => fetch(`http://localhost:5000/allNews/${params.id}`)
+         element:<NewsDetail></NewsDetail>,
+          loader: ({params}) => fetch(`https://newspaper-server-site-mu.vercel.app/allNews/${params.id}`)
         },
         {
           path:'/addArticles',

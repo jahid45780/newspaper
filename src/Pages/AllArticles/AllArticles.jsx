@@ -8,7 +8,7 @@ const AllArticles = () => {
     const [search, setSearch]= useState('')
 
     useEffect(()=>{
-        fetch(`http://localhost:5000/allNews`)
+        fetch(`https://newspaper-server-site-mu.vercel.app/allNews`)
         .then(res => res.json())
         .then(data => setTrNews(data) )
     },[search])

@@ -12,28 +12,20 @@ const Featured = () => {
             <p className=' text-4xl text-orange-700 ' > ----- Business Featured ----- </p>
         </section>
 
-<div className="Featured-item mt-4  ">
+<div className="">
 
 
 
-          <section className=" lg:grid grid-cols-2 gap-6 " >
+<div className="hero min-h-screen">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img src="https://i.ibb.co/7YTmcnb/Image.jpg" className=" rounded-lg shadow-2xl" />
+    <div>
+      <h1 className="text-5xl font-bold"> Business Part </h1>
+      <p className="py-6 text-xl ">Newspapers generate revenue through a combination of subscription fees, advertising sales, and digital content subscriptions, adapting to the digital age by diversifying income sources and incorporating online platforms for wider audience reach.</p>
 
-          <div>
-            <img className=" lg:ml-16  lg:w-full" src="../../../../public/Featured/Image.jpg" alt="" />
-          </div>
-
-          <div>
-            
-            <div className=" grid grid-cols-1 gap-2 lg:grid-cols-2 ml-9 " >
-            <img className=' lg:ml-[85px]'  src="../../../../public/Featured/Image (1).jpg" alt="" />
-            <img className='' src="../../../../public/Featured/Image (2).jpg" alt="" />
-            </div>
-
-            <img  className=" lg:ml-28   lg:mt-[75px] " src="../../../../public/Featured/Image (3).jpg" alt="" />
-
-          </div>
-
-          </section>
+    </div>
+  </div>
+</div>
 
             
         </div>
