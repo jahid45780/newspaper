@@ -1,4 +1,7 @@
+
 import UseAuth from "../../../Hooks/UseAuth";
+import PieChart from "../../PieChart/PieChart";
+import PieCharts from "../../PieChart/PieCharts";
 
 const AdminHome = () => {
 
@@ -15,6 +18,12 @@ const AdminHome = () => {
             </h1>
 
             <img className=" w-40 h-40 rounded-full mx-auto mt-3" src={user.photoURL} alt="" />
+
+
+             <div className=" lg:flex gap-2" >
+             <PieChart></PieChart>
+             <PieCharts></PieCharts>
+             </div>
 
         </div>
     );
