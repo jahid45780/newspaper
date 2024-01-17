@@ -14,6 +14,8 @@ import AddArticles from "../Pages/AddArticles/AddArticles";
 import UserHome from "../Pages/Dashboard/UserHome/UserHome";
 import Premium from "../Pages/Dashboard/Premium/Premium";
 import AllUser from "../Pages/Dashboard/AllUser/AllUser";
+import AdminHome from "../Pages/Dashboard/AdminHome/AdminHome";
+
 
 
 
@@ -71,6 +73,10 @@ import AllUser from "../Pages/Dashboard/AllUser/AllUser";
         {
           path:'/dashboard/allUsers',
           element:<AllUser></AllUser>
+        },
+        {
+          path:'/dashboard/adminHome',
+          element:<AdminHome></AdminHome> 
         }
       ]
     }

@@ -14,8 +14,8 @@ const Navbar = () => {
           <li> <Link to='/AllArticles' > All Articles </Link> </li>
           <li> <Link> My Articles </Link> </li>
           <li> <Link> Subscription </Link> </li>
-           <li> <Link to='/dashboard' > Dashboard </Link> </li>
-          <li> <Link to='/premium' > Premium Articles </Link> </li>
+           <li> <Link to='/dashboard' > Premium Articles </Link> </li>
+          <li> <Link to='/premium' >  Dashboard </Link> </li>
           
    </>
 
